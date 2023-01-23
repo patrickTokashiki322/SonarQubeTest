@@ -17,11 +17,11 @@ steps:
     action: 'Run a Docker Compose command'
     dockerComposeCommand: 'up -d'
 
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- script: docker ps -a
+  displayName: 'Verificando se o container está no ar.'
   
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+# - script: |
+#     echo Add other tasks to build, test, and deploy your project.
+#     echo See https://aka.ms/yaml
+#   displayName: 'Run a multi-line script'
